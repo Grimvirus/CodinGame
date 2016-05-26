@@ -4,10 +4,10 @@ var ans = [0,0,0,0,0]; // Counters
 
 var tmp = d.map(function(c,i,a) {
 var val = parseInt(n / c);
-//console.log(c+"|"+i+"|"+a+"|"+val+"|"+n);
-ans[i] = val;
-n = (n - (val*c)).toFixed(2);
-return;
+	//console.log(c+"|"+i+"|"+a+"|"+val+"|"+n);
+	ans[i] = val;
+	n = (n - (val*c)).toFixed(2);
+	return;
 });
 console.log(ans);
 console.log(ans.reduce((p,c) => p + " " + c));
